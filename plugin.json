@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "author": "HVL",
+    "description": ""
+  },
+  "data": [
+    {
+      "name": "NettruyenUpdate",
+      "author": "HVL",
+      "path": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/nettruyen/plugin.zip",
+      "version": 14,
+      "source": "https://nettruyenzz.net",
+      "icon": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/nettruyen/icon.png",
+      "description": "Đọc truyện trên trang nettruyen moi",
+      "type": "novel",
+      "locale": "vi_VN"
+    }
+  ]
+}
