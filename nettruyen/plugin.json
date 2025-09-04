@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Nettruyen update",
+    "author": "HVL",
+    "version": 33,
+    "source": "https://nettruyenzz.net",
+    "regexp": "(www.)?nettruyen[a-z]*.(com|vn|net)/truyen-tranh/[^/]+/?$",
+    "description": "Đọc truyện trên trang Net Truyện",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
