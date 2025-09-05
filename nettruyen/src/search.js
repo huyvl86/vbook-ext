@@ -2,7 +2,7 @@ load('config.js');
 function execute(key, page) {
     if (!page) page = '1';
 
-    let response = fetch(BASE_URL + "/tim-truyen", {
+    let response = fetch(BASE_URL + "/tim-kiem-nang-cao", {
         method: "GET",
         queries: {"keyword": key, "page": page}
     });
