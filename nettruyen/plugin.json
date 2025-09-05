@@ -3,7 +3,7 @@
     "name": "Nettruyen update",
     "author": "HVL",
     "version": 33,
-    "source": "https://nettruyenzz.net",
+    "source": "https://nettruyen3qa.com",
     "regexp": "(www.)?nettruyen[a-z]*.(com|vn|net)/truyen-tranh/[^/]+/?$",
     "description": "Đọc truyện trên trang Net Truyện",
     "locale": "vi_VN",
