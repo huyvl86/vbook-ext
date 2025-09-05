@@ -1,7 +1,7 @@
 load('config.js');
 function execute(url) {
     url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
-    url = url.replace("www.nettruyenvv.com","nettruyen3qa.com");
+    url = url.replace("www.nettruyenvv.com","nettruyenvia.com");
 
     let response = fetch(url);
     if (response.ok) {
