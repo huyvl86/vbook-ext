@@ -1,8 +1,8 @@
 load('config.js');
 function execute() {
     return Response.success([
-        {title: "Mới cập nhật", input: BASE_URL + "tim-truyen?status=", script: "gen.js"},
-        {title: "Truyện mới", input: BASE_URL + "tim-truyen?status=&sort=15", script: "gen.js"},
+        {title: "Mới cập nhật", input: BASE_URL + "/tim-truyen?status=", script: "gen.js"},
+        {title: "Truyện mới", input: BASE_URL + "/tim-truyen?status=&sort=15", script: "gen.js"},
         {title: "Top all", input: BASE_URL + "/tim-truyen?status=&sort=10", script: "gen.js"},
         {title: "Top tháng", input: BASE_URL + "/tim-truyen?status=&sort=11", script: "gen.js"},
         {title: "Top tuần", input: BASE_URL + "/tim-truyen?status=&sort=12", script: "gen.js"},
