@@ -1,7 +1,7 @@
 load('config.js');
 
 function execute() {
-    let response = fetch(BASE_URL + "/tim-truyen");
+    let response = fetch(BASE_URL + "/tim-kiem-nang-cao");
     if (response.ok) {
         let doc = response.html();
         let genres = [];
