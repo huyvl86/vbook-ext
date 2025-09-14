@@ -1,26 +1,25 @@
-load('config.js');
 function execute(url) {
-    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
-    url = url.replace("www.nettruyenvv.com","nettruyenvia.com");
-    url = url.replace("www.nettruyenmax.com","www.nettruyenmanga.com");
-    url = url.replace("nettruyenvia.com","www.nettruyenmanga.com");
-    
-    let response = fetch(url);
+    url = url.replace("nettruyen.com", "nettruyengo.com");
+    url = url.replace("nettruyentop.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenvip.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenpro.com", "nettruyenmoi.com");
+    url = url.replace("nettruyengo.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenmoi.com", "nettruyenone.com");
+    url = url.replace("nettruyenone.com", "nettruyenco.com");
+    url = url.replace("nettruyenco.com", "nettruyenme.com");
+    url = url.replace("nettruyenme.com", "nettruyentv.com");
+    var doc = Http.get(url).html();
 
-    if (response.ok) {
-        let doc = response.html();
-        let el = doc.select("div.list-chapter li.row .chapter a");
-        const data = [];
-        for (let i = el.size() - 1; i >= 0; i--) {
-            let e = el.get(i);
-            data.push({
-                name: e.text(),
-                url: e.attr("href"),
-                host: BASE_URL
-            })
-        }
-        return Response.success(data);
+     var el = doc.select("div.list-chapter li.row .chapter a")
+    const data = [];
+    for (var i = el.size() - 1; i >= 0 ; i--) {
+        var e = el.get(i);
+        data.push({
+            name: e.text(),
+            url: e.attr("href"),
+            host: "https://www.nettruyentv.com"
+        })
     }
 
-    return null;
+    return Response.success(data);
 }

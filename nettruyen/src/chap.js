@@ -1,39 +1,30 @@
-load('config.js');
 function execute(url) {
-    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
-    url = url.replace("www.nettruyenvv.com","nettruyenvia.com");
-    url = url.replace("www.nettruyenmax.com","www.nettruyenmanga.com");
-    url = url.replace("nettruyenvia.com","www.nettruyenmanga.com");
-     
-    let response = fetch(url);
-    if (response.ok) {
-        let doc = response.html();
-        let data = [];
-        doc.select(".page-chapter img").forEach(e => {
-            let img = e.attr("data-original");
-            let dataCdn = e.attr('data-cdn')
-            if (!img) {
-                img = e.attr("src");
+    url = url.replace("nettruyen.com", "nettruyenmoi.com");
+    url = url.replace("nettruyentop.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenvip.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenpro.com", "nettruyenmoi.com");
+    url = url.replace("nettruyengo.com", "nettruyenmoi.com");
+    url = url.replace("nettruyenmoi.com", "nettruyenone.com");
+    url = url.replace("nettruyenone.com", "nettruyenco.com");
+    url = url.replace("nettruyenco.com", "nettruyenme.com");
+    url = url.replace("nettruyenme.com", "nettruyentv.com");
+    var doc = Http.get(url).html();
+    var el = doc.select(".page-chapter img");
+    
+    var data = [];
+    for (var i = 0; i < el.size(); i++) {
+        var e = el.get(i);
+        var img = e.attr("data-original");
+        if (!img) {
+            img = e.attr("src");
+        }
+
+        if (img) {
+            if (img.startsWith("//")) {
+                img = "http:" + img;
             }
-            if (dataCdn) {
-                if (dataCdn.startsWith("//")) {
-                    dataCdn = "https:" + dataCdn;
-                }
-            }
-            if (img) {
-                if (img.startsWith("//")) {
-                    img = "http:" + img;
-                }
-                data.push({
-                    link: img,
-                    fallback: [
-                        dataCdn,
-                        'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&resize_h=0&rewriteMime=image/*&url=' + encodeURIComponent(img)
-                    ]
-                });
-            }
-        });
-        return Response.success(data);
+            data.push(img);
+        }
     }
-    return null;
+    return Response.success(data);
 }
