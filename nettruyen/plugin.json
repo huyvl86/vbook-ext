@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "name": "NetTruyen",
-    "author": "JustaTama",
-    "version": 1,
+    "name": "NetTruyenUpdate",
+    "author": "HVL",
+    "version": 10,
     "source": "https://nettruyenzz.net/",
     "regexp": "(www.)?(nhattruyen.com|nettruyen.com|nettruyentop.com|nettruyenvip.com|nettruyenpro.com|nettruyengo.com|nettruyenmoi.com|nettruyenone.com|nettruyenco.com|nettruyenme.com|nettruyenin.com|nettruyenon.com|nettruyentv.com|nettruyenmax.com)/truyen-tranh/[^/]+/?$",
     "description": "Đọc truyện trên trang NetTruyen",
