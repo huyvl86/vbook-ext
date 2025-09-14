@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "Nettruyen update",
-    "author": "HVL",
-    "version": 35,
-    "source": "https://www.nettruyenmanga.com",
-    "regexp": "(www.)?nettruyen[a-z]*.(com|vn|net)/truyen-tranh/[^/]+/?$",
-    "description": "Đọc truyện trên trang Net Truyện",
+    "name": "NetTruyen",
+    "author": "JustaTama",
+    "version": 1,
+    "source": "https://www.nettruyentv.com/",
+    "regexp": "(www.)?(nhattruyen.com|nettruyen.com|nettruyentop.com|nettruyenvip.com|nettruyenpro.com|nettruyengo.com|nettruyenmoi.com|nettruyenone.com|nettruyenco.com|nettruyenme.com|nettruyenin.com|nettruyenon.com|nettruyentv.com)/truyen-tranh/[^/]+/?$",
+    "description": "Đọc truyện trên trang NetTruyen",
     "locale": "vi_VN",
     "language": "javascript",
     "type": "comic"
