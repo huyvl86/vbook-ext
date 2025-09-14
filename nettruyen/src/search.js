@@ -1,6 +1,6 @@
 function execute(key, page) {
     if (!page) page = '1';
-    const doc = Http.get("https://nettruyenzz.net/tim-truyen").params({"keyword": key, "page": page}).html();
+    const doc = Http.get("https://nettruyenzz.net/search").params({"q": key, "page": page}).html();
 
     var next = doc.select(".pagination").select("li.active + li").text()
 
