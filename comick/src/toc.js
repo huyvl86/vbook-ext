@@ -11,7 +11,7 @@ function execute(url) {
     Console.log(JSON.stringify(json));
     let comicData = json.props.pageProps.comic;
 
-    let chapterResponse = fetch(CHAP + comicData.hid + "/chapters", {
+    let chapterResponse = fetch(CHAP + comicData.hid + "/chapter-list", {
         method: "GET",
         headers: {
             "referer": BASE
