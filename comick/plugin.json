@@ -2,7 +2,7 @@
   "metadata": {
     "name": "ComicK",
     "author": "HVL",
-    "version": 2,
+    "version": 3,
     "source": "https://comick.live",
     "regexp": "(www.)?comick.*?/comic/[0-9a-z-]+/?$",
     "description": "Fast free reader and a Big database for comics (manhwa, manhua, manga)",
