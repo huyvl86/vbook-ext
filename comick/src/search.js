@@ -9,7 +9,7 @@ function execute(key, page) {
         {
             q: key,
             sort: "created_at",
-            imit: 12,
+            limit: 12,
             page: page
         }
     });
