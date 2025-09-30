@@ -19,7 +19,7 @@
        "name": "ComicK",
        "author": "HVL",
        "path": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/comick/plugin.zip",
-       "version": 1,
+       "version": 3,
        "source": "https://comick.live",
        "icon": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/comick/icon.png",
        "description": "Fast free reader and a Big database for comics (manhwa, manhua, manga)",
