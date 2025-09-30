@@ -14,6 +14,17 @@
       "description": "Đọc truyện trên trang nettruyen moi",
       "type": "novel",
       "locale": "vi_VN"
+    },
+    {
+       "name": "ComicK",
+       "author": "HVL",
+       "path": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/comick/plugin.zip",
+       "version": 1,
+       "source": "https://comick.live",
+       "icon": "https://raw.githubusercontent.com/huyvl86/vbook-ext/main/comick/icon.png",
+       "description": "Fast free reader and a Big database for comics (manhwa, manhua, manga)",
+       "type": "comic",
+       "locale": "en_US"
     }
   ]
 }
