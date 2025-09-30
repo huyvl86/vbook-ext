@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "ComicK",
+    "author": "HVL",
+    "version": 2,
+    "source": "https://comick.live",
+    "regexp": "(www.)?comick.*?/comic/[0-9a-z-]+/?$",
+    "description": "Fast free reader and a Big database for comics (manhwa, manhua, manga)",
+    "local": "en_US",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
