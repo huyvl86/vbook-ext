@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Hangtruyen",
+    "author": "HVL",
+    "version": 10,
+    "source": "https://hangtruyen.org/",
+    "regexp": "(www.)?(hangtruyen.org|hangtruyen.app|hangtruyen.live)/truyen-tranh/[^/]+/?$",
+    "description": "Đọc truyện trên trang HangTruyen",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
